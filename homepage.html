@@ -4,14 +4,12 @@
     <head>
         <title>TEAM HPB</title>
         <style>
-          ul {
+         ul {
       list-style-type: none;
-      margin: 0;
+      margin: 0px;
       padding: 0px 15px;
       overflow: hidden;
-      background-color: rgba(151, 2, 2, 0.919);
-    }
-
+         }
     li {
       float: left;
     }
@@ -22,26 +20,30 @@
       text-align: center;
       padding: 30px 20px;
       text-decoration: none;
+      position: relative;
+      left: 15px;
     }
 
     li a:hover {
       background-color: rgb(109, 3, 3);
-    }
-
-    div.sticky {
-      position: -webkit-sticky;
-      /* Safari */
-      position: sticky;
-      top: 0;
-    }
+    } 
 
     #d {
       width: auto;
       height: 30px;
       top: 25px;
       position: relative;
-      left: 3px;
+      left: 18px;
     }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: rgba(151, 2, 2, 0.919);
+      z-index: 1;
+      left: 0px;
+          }
           .parallax-container {
             background-image: url(image.png);
             width: fit-content;
@@ -80,47 +82,76 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
           }
-          body {
-            overflow-x: hidden;
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
+          #wpb {
+            top: 450px;
+            left: -1000px;
           }
-          body::-webkit-scrollbar {
-            display: none;
-          }
-          nav {
-            position: sticky;
-            top: 0px;
-            z-index: 1;
-          }
+
+          li img:hover{
+      cursor: pointer;
+      background-color: rgb(109, 3, 3);
+    }
+    body{
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-image: url("GettyImages-1238769443.jpg");
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+    #x {
+      position: relative;
+      top: 25px;
+    }
+
         </style>
       </head>
       <body>
         <div class="parallax-container">
-            <nav>
                 <ul>
                   <div class="sticky">
-                    <li> <img src="Untitled85_20230803153606.jpg" id="d"> </li>
+                    <li><img onclick="z()" src="Untitled85_20230803153606.jpg" id="d"></li>
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="victims.html">Victims</a></li>
                     <li><a href="Howcanyouhelp.html">How Can You Help?</a></li>
                     <li><a href="policebrutality4.html">Police Brutality</a></li>
                     <li><a href="Aboutus.html">About Us</a></li>
                   </div>
+                  <script>
+                    function z(){
+                      location.replace('homepage.html')
+                    }
+                  </script>
                 </ul>
-              </nav>
           <div id="content">
-            <div class="about"><h1>TEAM HPB</h1>
+            <div class="about"><h1 id="x">TEAM HPB</h1>
             <p>How do <strong>YOU</strong> feel about Police Brutality? There are countless accounts of police officers supposedly "protecting"
               people who live quaint lives, only to usurp their government-granted power. Your opinion on this matter is what we care about.
               We are Team HPB and we created a website designed specifically to bring to light all types of underreported police brutality cases,
               so that greater justice can be achieved. We have a personal connection to the subject, as some of our families
               have experienced Police Brutality. <br>
               That is why we're here. To inform you. </p>
-              <p> </p>
-        </div>
-      </div>
+         
+     <h1>What is police Brutality?</h1>
+             <p>Us Team HPB have research to inform you U guys about police brutality. Police brutality refers to excessive use of force by the
+              police that results in the injury or death of civilians. It can be physical or verbal and can happen during arrests, interrogations
+               or other police interactions. Police brutality is a serious concern because it undermines the rule of law and violates the rights of
+               citizens. </p>
+                
+               <h1>How can you help with police brutality?</h1>
+                  <p>People can help address police brutality by educating themselves about the issue, advocating for police reform and accountability,
+                     donating to organizations that support victims and promote police changes, participating in discussions with community leaders and
+                     law enforcement, and attending peaceful protests.
+                  </p>
+               
+                <h1>Some victims of police brutality</h1><p>
+                  There have been many victims of police brutality over the years, including but not limited to: Eric Garner, Rayshard Brooks, Breonna Taylor,
+                  Tamir Rice, and George Floyd.
+                </p>
+              </div>
+
       </body>
       </html>

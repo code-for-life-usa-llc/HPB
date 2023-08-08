@@ -83,6 +83,10 @@
             top: 0px;
             z-index: 1;
         }
+        li img:hover{
+      cursor: pointer;
+      background-color: rgb(109, 3, 3);
+    }
          
         </style>
       </head>
@@ -91,13 +95,18 @@
             <nav>
                 <ul>
                   <div class="sticky">
-                    <li> <img src="Untitled85_20230803153606.jpg" id="d"> </li>
+                    <li> <img onclick="z()" src="Untitled85_20230803153606.jpg" id="d"> </li>
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="victims.html">Victims</a></li>
                     <li><a href="Howcanyouhelp.html">How Can You Help?</a></li>
                     <li><a href="policebrutality4.html">Police Brutality</a></li>
                     <li><a href="Aboutus.html">About Us</a></li>
                   </div>
+                  <script>
+                    function z(){
+                      location.replace('homepage.html')
+                    }
+                  </script>
                 </ul>
               </nav>
             <div class="about"><h1>ELVIS LOZANO</h1><p>Elvis, the head of the site. He goes to the Manhattan Center for Science and Mathematics. He controls and approves all that goes.
