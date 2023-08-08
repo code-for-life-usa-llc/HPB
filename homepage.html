@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0px 15px;
-        overflow: hidden;
-        background-color: rgba(151, 2, 2, 0.919);
-      }
+    <html>
+    <head>
+        <title>TEAM HPB</title>
+        <style>
+          ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0px 15px;
+      overflow: hidden;
+      background-color: rgba(151, 2, 2, 0.919);
+    }
 
     li {
       float: left;
@@ -29,6 +30,7 @@
 
     div.sticky {
       position: -webkit-sticky;
+      /* Safari */
       position: sticky;
       top: 0;
     }
@@ -40,31 +42,85 @@
       position: relative;
       left: 3px;
     }
-
-    body {
-      overflow-x: hidden;
-            -ms-overflow-style: none;  
-            scrollbar-width: none;  
-    }
-  </style>
-</head>
-
-<body>
-  <div class="parallax-container">
-    <nav>
-      <ul>
-        <div class="sticky">
-          <li> <img src="Untitled85_20230803153606.jpg" id="d"> </li>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="victims.html">Victims</a></li>
-          <li><a href="Howcanyouhelp.html">How Can You Help?</a></li>
-          <li><a href="policebrutality4.html">Police Brutality</a></li>
-          <li><a href="Aboutus.html">About Us</a></li>
+          .parallax-container {
+            background-image: url(image.png);
+            width: fit-content;
+            height: fit-content;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-width: 100vw;
+            min-height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+          }
+          .about{
+            color: white;
+            background-color: rgb(84, 44, 11, 0.7);
+            width: 1000px;
+            position: relative;
+            left: 3vw;
+            padding: 7px;
+            margin: 15px;
+            border-radius: 15px;
+            font-size: 150%;
+            align-self: center;
+          }
+          #content {
+            display: flex;
+            justify-content: center;
+          }
+          h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+          }
+          p{
+            font-size: normal;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+          }
+          body {
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+          }
+          body::-webkit-scrollbar {
+            display: none;
+          }
+          nav {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="parallax-container">
+            <nav>
+                <ul>
+                  <div class="sticky">
+                    <li> <img src="Untitled85_20230803153606.jpg" id="d"> </li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="victims.html">Victims</a></li>
+                    <li><a href="Howcanyouhelp.html">How Can You Help?</a></li>
+                    <li><a href="policebrutality4.html">Police Brutality</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                  </div>
+                </ul>
+              </nav>
+          <div id="content">
+            <div class="about"><h1>TEAM HPB</h1>
+            <p>How do <strong>YOU</strong> feel about Police Brutality? There are countless accounts of police officers supposedly "protecting"
+              people who live quaint lives, only to usurp their government-granted power. Your opinion on this matter is what we care about.
+              We are Team HPB and we created a website designed specifically to bring to light all types of underreported police brutality cases,
+              so that greater justice can be achieved. We have a personal connection to the subject, as some of our families
+              have experienced Police Brutality. <br>
+              That is why we're here. To inform you. </p>
+              <p> </p>
         </div>
-      </ul>
-    </nav>
-  </div>
-
-</body>
-
-</html>
+      </div>
+      </body>
+      </html>
