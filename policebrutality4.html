@@ -9,12 +9,13 @@
             background-color: black;
         }
         #police1 {
-            position: relative;
+            /*position: relative;
             top: -180px;
+            left: 525px;*/
             text-align: center;
             background-color: rgba(0, 0, 0, 0.741);
             width: fit-content;
-            left: 525px;
+            
             border-radius: 20px;
             padding: 5px;
         }
@@ -34,9 +35,9 @@
             line-height: 1.5;
         }
         #b {
-            position: relative;
+            /*position: relative;
             top: 75px;
-            left: 500px;
+            left: 500px;*/
             width: auto;
             height: 300px;
             border: solid black;
@@ -45,45 +46,47 @@
             box-shadow: 15px 15px 15px rgba(151, 2, 2, 0.919);
         }
         #p1 {
-            position: relative;
+            /*position: relative;
             top: 120px;
+            left: 210px;*/
             text-align: center;
             text-indent: 20px;
             font-size: 23px;
             background-color: rgba(0, 0, 0, 0.741);
             width: fit-content;
-            left: 210px;
+            
             padding: 20px;
             border-radius: 20px;
         }
         #police2 {
-            position: relative;
+           /* position: relative;
             top: 100px;
+            left: 585px;*/
             text-align: center;
             font-size: 35px;
             background-color: rgba(0, 0, 0, 0.741);
             width: fit-content;
-            left: 585px;
+            
             padding: 5px;
             border-radius: 20px;
         }
         #a{
-            position: relative;
+            /*position: relative;
             top: 100px;
+            left: 75px;*/
             text-align: center;
             text-indent: 20px;
             font-size: 23px;
             background-color: rgba(0, 0, 0, 0.741);
             width: fit-content;
-            left: 75px;
             padding: 20px;
             border-radius: 20px;
         }
            
         #c {
-            position: relative;
+            /*position: relative;
             top: 90px;
-            left: 480px;
+            left: 480px;*/
             width: auto;
             height: 300px;
             margin-bottom: 150px;
@@ -129,6 +132,11 @@
       cursor: pointer;
       background-color: rgb(109, 3, 3);
     }
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
         
     </style>
     
@@ -150,8 +158,12 @@
               </script>
         </ul>
     </nav>
-
+    <div id="content">
+        <h1 id="police1">
+            Why is Police Brutality a problem?
+        </h1>
     <div>
+        
         <p id="p1">
             Police brutality refers to the excessive use of force by a police officer against a victim or victims that is<br>deemed to go beyond
              the level required to sustain life, avoid injury, or control a situation.1encounters with<br>the police do not involve 
@@ -160,10 +172,6 @@
              can be really dark outside and very hard to see or it can be really bright outside and visible.
         </p>
     </div>
-    <h1 id="police1">
-        Why is Police Brutality a problem?
-    </h1>
-    
    <img src="graph.png" id="b">
    <h1 id="police2">
         Mental Health Issues
@@ -178,5 +186,6 @@
    </p>
     <img src="police1.jpg" id="c">
     </div>
+</div>
 </body>
 </html>

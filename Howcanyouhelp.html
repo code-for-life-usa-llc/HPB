@@ -68,7 +68,7 @@
 
     h1 {
       color: white;
-      font-size: xx-large;
+      font-size: 250%;
       border-radius: 15px;
       background-color: rgba(0, 0, 0, 0.538);
       width: fit-content;
@@ -93,8 +93,8 @@
     }
     #po {
       position: relative;
-      left: 100px;
-      top: -16px;
+      /*left: 100px;
+      top: -16px;*/
       border: solid black 5px;
       height: 500px;
     }
@@ -112,31 +112,32 @@
         }
         #video2 {
           margin: 20px;
-          position: relative;
+          /*position: relative;
           left: 450px;
-          top: 380px;
+          top: 380px;*/
           border: black solid;
         }
         #p1 {
           position: relative;
-          top: -350px;
+          /*top: -450px;*/
           font-size: xx-large;
           padding: 30px;
           border-radius: 20px;
-          left: 240px;
+          /*left: 240px;*/
         }
         #p2 {
           font-size: xx-large;
           position: relative;
           top: 0px;
           padding: 30px;
-          left: 240px;
+          /*left: 240px;*/
           border-radius: 20px;
+          margin-bottom: 15vh;
         }
         #h1 {
           padding: 20px;
           position: relative;
-          left: 600px;
+          /*left: 600px;*/
         }
         nav {
             position: sticky;
@@ -146,6 +147,12 @@
         li img:hover{
       cursor: pointer;
       background-color: rgb(109, 3, 3);
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   </style>
 </head>
@@ -170,6 +177,7 @@
       </ul>
 
     </nav>
+    <div id="content">
     <h1 id="h1">How Can You Help</h1>
     <div>
     <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/OZIr4dcz4oo"
@@ -177,9 +185,6 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
       <img id="po" src="stretched-police.png">
-      <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/2Oo_sEkmELk" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
       </div>
     <br>
     <br>
@@ -189,12 +194,16 @@
        policing occurs. The police<br>force should not be known as people who make a lot of arrest but people<br>who make the community feel 
        safer.
     </p>
+    <iframe id="video2" width="840" height="472" src="https://www.youtube.com/embed/2Oo_sEkmELk" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
     <p id="p2">
       Police academy training must go beyond firearms and defensive tactics.<br>Instead, it should emphasize communication skills and methods
       for<br>recognizing and de-escalating potentially violent situations. Some<br>academies do teach officers how to de-escalate confrontation,
       but not to<br>the extent necessary and not as often as they should after the officer is<br>sworn.
     </p>
   </div>
+</div>
 </body>
 
 </html>
